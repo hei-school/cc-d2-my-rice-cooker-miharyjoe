@@ -77,4 +77,4 @@ A simple command-line interface (CLI) application for a rice cooker implemented 
 # The guide style I use
    [Android Kotlin Style Guide ](https://developer.android.com/kotlin/style-guide?hl=fr)
 
-   And [Kylint](https://github.com/pinterest/ktlint)
+   And [Ktlint](https://github.com/pinterest/ktlint)
