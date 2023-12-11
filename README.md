@@ -53,11 +53,20 @@ A simple command-line interface (CLI) application for a rice cooker implemented 
     - Exits the Rice Cooker CLI.
 
 ## How to Run
+1. **Download the Project:**
 
-1. Ensure you have Kotlin installed on your machine.
-2. Save the code in a Kotlin file (e.g., `RiceCookerCLI.kt`).
+   Clone or download the Kotlin branch of the project from the repository.
+
+   ```bash
+   git clone -b feature/kotlin https://github.com/hei-school/cc-d2-my-rice-cooker-miharyjoe.git
+   ```
+
+2. Ensure you have Kotlin installed on your machine.
 3. Open a terminal and navigate to the directory containing the file.
 4. Compile and run the code using the following commands:
    ```bash
-   kotlinc RiceCookerCLI.kt -include-runtime -d RiceCookerCLI.jar
+   cd cc-d2-my-rice-cooker-miharyjoe
+   
+   kotlinc MainRiceCooker.kt -include-runtime -d RiceCookerCLI.jar
+   
    java -jar RiceCookerCLI.jar
