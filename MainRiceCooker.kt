@@ -15,19 +15,23 @@ fun main() {
         print("Enter the number of the command: ")
         when (val userInput = readlnOrNull()) {
             "1" -> {
-                print("Enter quantity of rice (can be null): ")
-                val riceQuantity = readlnOrNull()?.toIntOrNull()
+                try {
+                    print("Enter quantity of rice (can be null): ")
+                    val riceQuantity = readlnOrNull()?.toInt()
 
-                print("Enter quantity of water (can be null): ")
-                val waterQuantity = readlnOrNull()?.toIntOrNull()
+                    print("Enter quantity of water (can be null): ")
+                    val waterQuantity = readlnOrNull()?.toInt()
 
-                print("Enter temperature (optional, default 100°C): ")
-                val temperature = readlnOrNull()?.toIntOrNull()
+                    print("Enter temperature (optional, default 100°C): ")
+                    val temperature = readlnOrNull()?.toInt()
 
-                print("Enter timer (optional, default 30min): ")
-                val timer = readlnOrNull()?.toIntOrNull()
+                    print("Enter timer (optional, default 30min): ")
+                    val timer = readlnOrNull()?.toInt()
 
-                cooker.setupCooking(riceQuantity, waterQuantity, temperature, timer)
+                    cooker.setupCooking(riceQuantity, waterQuantity, temperature, timer)
+                } catch (e: NumberFormatException) {
+                    println("Error: Invalid input. Please enter a valid number.")
+                }
             }
             "2" -> cooker.startCooking()
             "3" -> cooker.warmMode()
@@ -40,5 +44,13 @@ fun main() {
             }
             else -> println("Invalid command. Please enter a valid number.")
         }
+    }
+}
+
+fun readlnOrNull(): String? {
+    return try {
+        readLine()
+    } catch (e: Exception) {
+        null
     }
 }
