@@ -51,7 +51,11 @@ A simple command-line interface (CLI) application for a rice cooker implemented 
 
 7. **Quit:**
     - Exits the Rice Cooker CLI.
-
+## Requirement 
+ Ensure you have Kotlin installed on your machine:
+ Kotlin is included in each [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?_ga=2.106146819.1864672128.1702226033-1629771559.1701450046&_gl=1*y5k9lf*_ga*MTYyOTc3MTU1OS4xNzAxNDUwMDQ2*_ga_9J976DJZ68*MTcwMjMwMDgzNC4xMS4xLjE3MDIzMDA4NTguMzYuMC4w&section=linux) 
+ and [Android Studio](https://developer.android.com/studio) release. 
+ Download and install one of these IDEs to start using Kotlin.
 ## How to Run
 1. **Download the Project:**
 
@@ -60,10 +64,9 @@ A simple command-line interface (CLI) application for a rice cooker implemented 
    ```bash
    git clone -b feature/kotlin https://github.com/hei-school/cc-d2-my-rice-cooker-miharyjoe.git
    ```
-
-2. Ensure you have Kotlin installed on your machine.
-3. Open a terminal and navigate to the directory containing the file.
-4. Compile and run the code using the following commands:
+   
+2. Open a terminal and navigate to the directory containing the file.
+3. Compile and run the code using the following commands:
    ```bash
    cd cc-d2-my-rice-cooker-miharyjoe
    
